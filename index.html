@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preload" href="./fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/Roboto-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top__wrapper">
+                    <div class="lang-links">
+                        <a href="#" class="lang-link">EN</a>
+                        <a href="#" class="lang-link">CN</a>
+                        <a href="#" class="lang-link active">RU</a>
+                    </div>
+                    <div class="header__info">
+                        <a href="#" class="info-link">
+                            <div class="info-link-ico">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6 0C3.23833 0 1 2.18914 1 4.89C1 8.106 4.25083 9.64543 4.65833 10.0037C5.07417 10.3697 5.4175 11.19 5.55667 11.6554C5.62333 11.8809 5.8125 11.9949 6 12C6.09998 11.9988 6.19695 11.9646 6.27672 11.9026C6.35649 11.8406 6.41488 11.754 6.44333 11.6554C6.5825 11.19 6.92667 10.3697 7.34167 10.0037C7.75 9.64543 11 8.106 11 4.89C11 2.19 8.76167 0 6 0ZM6 6.22371C5.24667 6.22371 4.63667 5.62714 4.63667 4.89C4.63667 4.15286 5.24667 3.55629 6 3.55629C6.75333 3.55629 7.36333 4.15371 7.36333 4.89C7.36333 5.62714 6.75333 6.22371 6 6.22371Z"
+                                        fill="#F04D44" />
+                                </svg>
+                            </div>
+                            <span>119333, г. Москва, Ленинский проспект, д. 55/1, стр.1 </span>
+                        </a>
+                        <a href="tel:+74957354228" class="info-link">
+                            <div class="info-link-ico">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_152_3282)">
+                                        <path
+                                            d="M8.98723 7.76786C8.88348 7.70722 8.76534 7.67559 8.64518 7.6763C8.52501 7.677 8.40725 7.71001 8.30422 7.77186L7.23623 8.40786C7.12037 8.47763 6.98606 8.51058 6.85108 8.50236C6.71609 8.49415 6.58677 8.44516 6.48023 8.36187C5.94835 7.95033 5.44083 7.50825 4.96023 7.03786C4.43023 6.50786 3.93222 5.89786 3.63622 5.51786C3.55309 5.41122 3.50427 5.28184 3.49624 5.14686C3.4882 5.01187 3.52132 4.87762 3.59123 4.76186L4.22723 3.69486C4.289 3.59141 4.32187 3.47327 4.3224 3.35277C4.32292 3.23228 4.29109 3.11386 4.23023 3.00986L2.66323 0.333864C2.58958 0.208121 2.47722 0.109588 2.34293 0.0529908C2.20865 -0.00360625 2.05966 -0.0152274 1.91822 0.0198642C1.63522 0.0888642 1.26822 0.256864 0.882225 0.642864C-0.325775 1.84986 -0.966775 3.88586 3.57323 8.42586C8.11322 12.9659 10.1492 12.3259 11.3572 11.1179C11.7442 10.7309 11.9112 10.3629 11.9812 10.0789C12.0162 9.93797 12.0046 9.78954 11.9482 9.65579C11.8918 9.52203 11.7935 9.41014 11.6682 9.33686C10.7744 8.81406 9.88078 8.29106 8.98723 7.76786Z"
+                                            fill="#F04D44" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_152_3282">
+                                            <rect width="12" height="12" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <span>+7 (495) 735-42-28</span>
+                        </a>
+                        <a href="mailto:info@rapu.ru" class="info-link">
+                            <div class="info-link-ico">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_152_3286)">
+                                        <path
+                                            d="M6 0C2.693 0 0 2.693 0 6C0 9.307 2.693 12 6 12H9V10.8H6C5.36928 10.8013 4.74452 10.6781 4.16156 10.4373C3.5786 10.1966 3.04893 9.84304 2.60295 9.39705C2.15696 8.95107 1.80345 8.4214 1.56269 7.83844C1.32194 7.25548 1.19868 6.63072 1.2 6C1.19868 5.36928 1.32194 4.74452 1.56269 4.16156C1.80345 3.5786 2.15696 3.04893 2.60295 2.60295C3.04893 2.15696 3.5786 1.80345 4.16156 1.56269C4.74452 1.32194 5.36928 1.19868 6 1.2C6.63072 1.19868 7.25548 1.32194 7.83844 1.56269C8.4214 1.80345 8.95107 2.15696 9.39705 2.60295C9.84304 3.04893 10.1966 3.5786 10.4373 4.16156C10.6781 4.74452 10.8013 5.36928 10.8 6V6.9C10.8013 7.01856 10.779 7.1362 10.7342 7.24599C10.6895 7.35579 10.6232 7.45554 10.5394 7.53938C10.4555 7.62322 10.3558 7.68947 10.246 7.73422C10.1362 7.77898 10.0186 7.80134 9.9 7.8C9.78144 7.80134 9.6638 7.77898 9.55401 7.73422C9.44421 7.68947 9.34446 7.62322 9.26062 7.53938C9.17678 7.45554 9.11053 7.35579 9.06578 7.24599C9.02102 7.1362 8.99866 7.01856 9 6.9V6C9 4.35 7.65 3 6 3C4.35 3 3 4.35 3 6C3 7.65 4.35 9 6 9C6.848 9 7.613 8.64 8.16 8.068C8.538 8.628 9.179 9 9.9 9C10.4561 8.99737 10.9888 8.77528 11.382 8.38202C11.7753 7.98876 11.9974 7.45614 12 6.9V6C12 2.693 9.307 0 6 0ZM6 4.2C7.001 4.2 7.8 4.999 7.8 6C7.8 7.001 7.001 7.8 6 7.8C4.999 7.8 4.2 7.001 4.2 6C4.2 4.999 4.999 4.2 6 4.2Z"
+                                            fill="#F04D44" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_152_3286">
+                                            <rect width="12" height="12" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <span>info@rapu.ru</span>
+                        </a>
+                        <a href="#" class="info-link">
+                            <div class="info-link-ico">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11.2607 0.875C11.393 0.875127 11.5429 0.932287 11.543 1.10156C11.543 1.21149 11.5218 1.32156 11.5205 1.32812L9.82227 10.001C9.82227 10.001 9.7493 10.3975 9.25684 10.3975C8.99569 10.3974 8.86133 10.2734 8.86133 10.2734L6.65039 8.43848L5.00195 9.88965C5.00195 9.88965 4.93354 9.94252 4.84375 9.94434C4.80952 9.94569 4.77546 9.93869 4.74414 9.9248L5.18164 7.2207L5.18262 7.21973L9.64062 3.09473C9.68826 3.05827 9.71952 3.00476 9.72754 2.94531C9.73553 2.88581 9.71997 2.82511 9.68359 2.77734C9.66557 2.75388 9.64278 2.73457 9.61719 2.71973C9.59141 2.70484 9.56272 2.69432 9.5332 2.69043C9.50363 2.68655 9.47313 2.68854 9.44434 2.69629C9.41559 2.70405 9.38882 2.71816 9.36523 2.73633L3.38477 6.31348L3.38184 6.3125L1.07129 5.69922C1.07129 5.69922 0.66032 5.58018 0.660156 5.24023C0.660156 4.95637 1.08301 4.82129 1.08301 4.82129L10.75 0.981445C10.7573 0.978522 11.048 0.875 11.2607 0.875Z"
+                                        fill="#F04D44" />
+                                </svg>
+                            </div>
+                            <span>Telegram</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-bottom__wrapper">
+                    <a href="#" class="header__logo">
+                        <img src="./img/header-logo.svg" alt="">
+                    </a>
+                    <nav class="header-menu">
+                        <a class="active" href="#">Главная</a>
+                        <a href="#">Пресс-центр</a>
+                        <a href="#">Аналитика</a>
+                        <a href="#">Отрасль</a>
+                        <a href="#">Об ассоциации</a>
+                        <a href="#">Устойчивое развитие</a>
+                        <a href="#">Мультимедиа</a>
+                        <a href="#">Контакты</a>
+                    </nav>
+                    <a href="#" class="header-search">
+                        <img src="./img/Search.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main-screen">
+            <div class="main-screen__content">
+                <div class="container">
+                    <h1 class="main-screen__title">
+                        <span>Российская</span>
+                        <span>ассоциация</span>
+                        <span>производителей</span>
+                        <span>удобрений</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="main-screen-bg">
+                <div class="main-screen-bg-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url(./img/main-screen-image-1.jpg);"></div>
+                        <div class="swiper-slide" style="background-image: url(./img/main-screen-image-2.jpg);"></div>
+                        <div class="swiper-slide" style="background-image: url(./img/main-screen-image-3.jpg);"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partners">
+            <div class="partners-slider swiper">
+                <div class="swiper-wrapper">
+                    <a href="#" target="_blank" class="swiper-slide"><img src="./img/partners/1.png" alt=""></a>
+                    <a href="#" target="_blank" class="swiper-slide"><img src="./img/partners/2.png" alt=""></a>
+                    <a href="#" target="_blank" class="swiper-slide"><img src="./img/partners/3.png" alt=""></a>
+                    <a href="#" target="_blank" class="swiper-slide"><img src="./img/partners/4.png" alt=""></a>
+                    <a href="#" target="_blank" class="swiper-slide"><img src="./img/partners/5.png" alt=""></a>
+                    <a href="#" target="_blank" class="swiper-slide"><img src="./img/partners/6.png" alt=""></a>
+                    <a href="#" target="_blank" class="swiper-slide"><img src="./img/partners/7.png" alt=""></a>
+                    <a href="#" target="_blank" class="swiper-slide"><img src="./img/partners/8.png" alt=""></a>
+                    <a href="#" target="_blank" class="swiper-slide"><img src="./img/partners/9.png" alt=""></a>
+                    <a href="#" target="_blank" class="swiper-slide"><img src="./img/partners/10.png" alt=""></a>
+                    <a href="#" target="_blank" class="swiper-slide"><img src="./img/partners/11.png" alt=""></a>
+                    <a href="#" target="_blank" class="swiper-slide"><img src="./img/partners/12.png" alt=""></a>
+                    <a href="#" target="_blank" class="swiper-slide"><img src="./img/partners/13.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <section class="combined-section">
+            <div class="container">
+                <div class="combined-section__wrapper">
+                    <div class="news-block">
+                        <a href="#" target="_blank" class="arrow-title">
+                            <div class="title-name">Пресс-центр</div>
+                            <div class="arrow-title-ico">
+                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.3724 23.7L30.3724 7.62839L14.3008 7.62839" stroke="#3E434A"
+                                        stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
+                                    <path d="M29.2751 8.72699L8.82031 29.1818" stroke="#3E434A" stroke-width="3"
+                                        stroke-linecap="square" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </a>
+                        <div class="news-list">
+                            <a href="#" target="_blank" class="news-item">
+                                <div class="news-item__name">«Аммоний 2» признан лучшим инвестиционным проектом</div>
+                                <div class="news-item__date">29.05.2025</div>
+                            </a>
+
+                            <a href="#" target="_blank" class="news-item">
+                                <div class="news-item__name">«Акрон» подтвердил соответствие международным стандартам
+                                    ISO</div>
+                                <div class="news-item__date">29.05.2025</div>
+                            </a>
+
+                            <a href="#" target="_blank" class="news-item">
+                                <div class="news-item__name">Наблюдательный совет Мурманского арктического университета
+                                    одобрил масштабный проект ФосАгро по развитию инфраструктуры филиала вуза в Апатитах
+                                </div>
+                                <div class="news-item__date">29.05.2025</div>
+                            </a>
+
+                            <a href="#" target="_blank" class="news-item">
+                                <div class="news-item__name">Выручка Группы «Акрон» по МСФО за первый квартал 2025 года
+                                    выросла на 30% </div>
+                                <div class="news-item__date">29.05.2025</div>
+                            </a>
+                            <a href="#" target="_blank" class="news-item">
+                                <div class="news-item__name">ЕвроХим стал победителем конкурса РСПП в номинации «За
+                                    экологическую ответственность»</div>
+                                <div class="news-item__date">29.05.2025</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="graphs-block">
+                        <a href="#" target="_blank" class="arrow-title">
+                            <div class="title-name">Объем производства</div>
+                            <div class="arrow-title-ico">
+                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M30.3724 23.7L30.3724 7.62839L14.3008 7.62839" stroke="#3E434A"
+                                        stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
+                                    <path d="M29.2751 8.72699L8.82031 29.1818" stroke="#3E434A" stroke-width="3"
+                                        stroke-linecap="square" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
