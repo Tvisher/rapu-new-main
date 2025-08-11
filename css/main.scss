@@ -628,3 +628,18 @@ body {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+.highcharts-credits {
+    display: none;
+}
+
+
+.graphs-block__wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#container-bar {
+    margin-top: -20px;
+    border-bottom: 1px solid #ECEEF0;
+}

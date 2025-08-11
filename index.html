@@ -210,6 +210,11 @@
                                 </svg>
                             </div>
                         </a>
+
+                        <div class="graphs-block__wrapper">
+                            <div id="container-pie" style="height: 240px;width: 240px;"></div>
+                            <div id="container-bar" style="height: 220px;width: 220px;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -218,6 +223,104 @@
     <footer class="footer"></footer>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script>
+        const pieColors = ['#FFA148', '#3A7EE3', '#69D354'];
+        const columnsColors = ['#3A7EE3', '#69D354', '#FFA148'];
+
+        // Donut chart
+        Highcharts.chart('container-pie', {
+            exporting: {
+                enabled: false
+            },
+            chart: {
+                type: 'pie',
+                spacing: [0, 0, 0, 0]
+            },
+            title: { text: '' },
+            plotOptions: {
+                series: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    borderRadius: 8,
+                    innerSize: '42%',
+                    borderWidth: 3,
+                    dataLabels: [{
+                        enabled: true,
+                        distance: -24,
+                        format: '{point.percentage:.0f}%',
+                        style: { fontSize: '18px', fontWeight: 'bold', color: '#fff', textOutline: 'none' }
+                    }],
+                }
+            },
+            series: [{
+                name: 'Процент',
+                colors: pieColors,
+                tooltip: {
+                    pointFormat: ''
+                },
+                data: [
+                    { name: 'Калийные удобрения', y: 39 },
+                    { name: 'Азотные удобрения', y: 46 },
+                    { name: 'Фосфорные удобрения', y: 15 },
+                ]
+            }],
+
+        });
+
+        // Bar chart
+        Highcharts.chart('container-bar', {
+            exporting: {
+                enabled: false
+            },
+            chart: {
+                type: 'column',
+                spacing: [0, 0, 0, 0],
+                height: '100%' // или число в px
+            },
+            title: { text: '' },
+            xAxis: {
+                visible: false
+            },
+            yAxis: {
+                visible: false
+            },
+            legend: { enabled: false },
+            // tooltip: { enabled: false },
+            plotOptions: {
+                column: {
+                    borderRadius: 8, // скругление столбцов
+                    pointPadding: 0.01, // меньше отступ
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.y:.2f}',
+                        style: {
+                            fontSize: '14px',
+                            fontWeight: 'bold',
+                            color: '#000'
+                        }
+                    }
+                }
+            },
+            series: [{
+                name: 'Процент',
+                colors: columnsColors,
+                colorByPoint: true,
+                // data: [4.60, 1.51, 3.97]
+                tooltip: {
+                    pointFormat: ''
+                },
+                data: [
+                    { name: 'Калийные удобрения', y: 4.60 },
+                    { name: 'Азотные удобрения', y: 1.51 },
+                    { name: 'Фосфорные удобрения', y: 3.97 },
+                ]
+            }]
+        });
+    </script>
 </body>
 
 </html>
