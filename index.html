@@ -210,11 +210,110 @@
                                 </svg>
                             </div>
                         </a>
-
                         <div class="graphs-block__wrapper">
-                            <div id="container-pie" style="height: 240px;width: 240px;"></div>
-                            <div id="container-bar" style="height: 220px;width: 220px;"></div>
+                            <div class="graphs">
+                                <div class="graphs-visual">
+                                    <div id="container-pie"></div>
+                                    <div id="container-bar"></div>
+                                </div>
+                                <div class="graphs-info">
+                                    <div class="graphs-info__item"><span
+                                            style="background-color: #3A7EE3;"></span>Азотные удобрения</div>
+                                    <div class="graphs-info__item"><span
+                                            style="background-color: #69D354;"></span>Фосфорные удобрения</div>
+                                    <div class="graphs-info__item"><span
+                                            style="background-color: #FFA148;"></span>Калийные удобрения</div>
+                                </div>
+                            </div>
+                            <div class="data-blocks">
+                                <div class="data-block">
+                                    <div class="data-block__val">
+                                        22,8 <span>млн<br> тонн</span>
+                                    </div>
+                                    <div class="data-block__descr">В физическом весе</div>
+                                </div>
+
+                                <div class="data-block">
+                                    <div class="data-block__val">
+                                        10,1 <span>млн<br> тонн</span>
+                                    </div>
+                                    <div class="data-block__descr">В пересчета<br> на 100% пит. в-в</div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="graphs-block__footer">Период: январь-апрель 2025</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="links-section">
+            <div class="container">
+                <div class="links-section__wrapper">
+                    <div class="links-section__map">
+                        <a href="#" target="_blank" class="map-image"
+                            style="background-image: url(./img/map-image.jpg);">
+                            <div class="arrow-title">
+                                <div class="title-name">Карта отрасли</div>
+                                <div class="arrow-title-ico">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M30.3724 23.7L30.3724 7.62839L14.3008 7.62839" stroke="#3E434A"
+                                            stroke-width="3" stroke-linecap="square" stroke-linejoin="round" />
+                                        <path d="M29.2751 8.72699L8.82031 29.1818" stroke="#3E434A" stroke-width="3"
+                                            stroke-linecap="square" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="map-descr">
+                            <div class="map-descr__item">
+                                <div class="item-top">
+                                    <div class="item-top__coll">38 <span>Предприятий <br> в отрасли </span></div>
+                                    <div class="item-top__coll">+9 <span>Металлургических<br> компаний</span></div>
+                                    <div class="item-top__coll">22 <span>Регион <br>присутсвия</span></div>
+                                </div>
+                                <div class="item-bottom">В отрасли</div>
+                            </div>
+
+                            <div class="map-descr__item">
+                                <div class="item-top">
+                                    <div class="item-top__coll">13 <span>Членов РАПУ</span></div>
+                                    <div class="item-top__coll">29 <span>Предприятий</span></div>
+                                    <div class="item-top__coll">20 <span>Регион <br>присутсвия</span></div>
+                                </div>
+                                <div class="item-bottom">В составе РАПУ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="links-section__coll">
+                        <a href="#" class="coll-item" style="background-image: url(./img/link-bg-1.jpg);">
+                            <div target="_blank" class="arrow-title">
+                                <div class="title-name">Каталог продукции</div>
+                                <div class="arrow-title-ico">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M30.3724 23.7L30.3724 7.62839L14.3008 7.62839" stroke="#3E434A"
+                                            stroke-width="3" stroke-linecap="square" stroke-linejoin="round"></path>
+                                        <path d="M29.2751 8.72699L8.82031 29.1818" stroke="#3E434A" stroke-width="3"
+                                            stroke-linecap="square" stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="coll-item" style="background-image: url(./img/link-bg-2.jpg);">
+                            <div target="_blank" class="arrow-title">
+                                <div class="title-name">Члены ассоциации</div>
+                                <div class="arrow-title-ico">
+                                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M30.3724 23.7L30.3724 7.62839L14.3008 7.62839" stroke="#3E434A"
+                                            stroke-width="3" stroke-linecap="square" stroke-linejoin="round"></path>
+                                        <path d="M29.2751 8.72699L8.82031 29.1818" stroke="#3E434A" stroke-width="3"
+                                            stroke-linecap="square" stroke-linejoin="round"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -222,11 +321,9 @@
     </main>
     <footer class="footer"></footer>
     <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/highcharts.js"></script>
 
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="./js/main.js"></script>
     <script>
         const pieColors = ['#FFA148', '#3A7EE3', '#69D354'];
         const columnsColors = ['#3A7EE3', '#69D354', '#FFA148'];
@@ -243,6 +340,7 @@
             title: { text: '' },
             plotOptions: {
                 series: {
+                    size: '100%',
                     allowPointSelect: true,
                     cursor: 'pointer',
                     borderRadius: 8,
@@ -250,7 +348,7 @@
                     borderWidth: 3,
                     dataLabels: [{
                         enabled: true,
-                        distance: -24,
+                        distance: -35,
                         format: '{point.percentage:.0f}%',
                         style: { fontSize: '18px', fontWeight: 'bold', color: '#fff', textOutline: 'none' }
                     }],
@@ -278,8 +376,9 @@
             },
             chart: {
                 type: 'column',
+                height: '100%',
                 spacing: [0, 0, 0, 0],
-                height: '100%' // или число в px
+                margin: [0, 0, 0, 0]
             },
             title: { text: '' },
             xAxis: {
@@ -299,7 +398,7 @@
                         format: '{point.y:.2f}',
                         style: {
                             fontSize: '14px',
-                            fontWeight: 'bold',
+                            fontWeight: '600',
                             color: '#000'
                         }
                     }
