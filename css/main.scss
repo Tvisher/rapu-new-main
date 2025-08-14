@@ -1541,3 +1541,105 @@ body {
     font-weight: 400;
     line-height: 140%;
 }
+
+
+.mailing-section {
+    padding: 60px 0;
+    background-color: $brand-color;
+    background-image: url(../img/mailing-bg.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+.mailing-section__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFF;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.mailing-section__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 390px;
+    width: 100%;
+}
+
+.agree-label {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+
+.input-label {
+    background-color: #fff;
+    display: flex;
+    margin-bottom: 10px;
+
+
+    input {
+        color: #3E434A;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        padding: 12px 15px;
+        width: 100%;
+    }
+
+    button {
+        flex-shrink: 0;
+        width: 40px;
+        height: 40px;
+        background-color: $brand-color;
+        border: 1px solid #fff;
+        margin-left: auto;
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M19.1818 14.9684L19.1818 4.81787L9.03125 4.81787' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M18.4891 5.51172L5.57031 18.4306' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 24px;
+        cursor: pointer;
+    }
+}
+
+.agree-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 100%;
+
+    input {
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        margin-bottom: 2px;
+
+        &:checked {
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 4.67999L4.81799 9.5L11 1.5' stroke='%23F04D44' stroke-width='2'/%3e%3c/svg%3e ");
+            background-repeat: no-repeat;
+            background-size: 12px;
+            background-position: center;
+        }
+    }
+}
+
+.mailing-section__hot-line {
+    padding: 22px 32px;
+    border: 2px solid #FFF;
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 140%;
+}
