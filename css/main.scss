@@ -1420,6 +1420,7 @@ body {
 
 
 .quotation-news {
+    flex-shrink: 0;
     width: 420px;
     background-color: #3E434A;
     padding: 20px;
