@@ -280,7 +280,8 @@ body {
 /* Базовые стили для контейнера */
 .container {
     width: 100%;
-    max-width: 1380px;
+    // max-width: 1380px;
+    max-width: 1860px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
@@ -313,7 +314,7 @@ body {
 }
 
 .lang-link {
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
@@ -336,7 +337,7 @@ body {
     align-items: center;
     gap: 10px;
     font-family: Roboto;
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
@@ -390,7 +391,7 @@ body {
     a {
         display: block;
         padding: 12px 30px;
-        font-size: 14px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 600;
         line-height: 140%;
@@ -421,7 +422,8 @@ body {
 .main-screen-bg {
     position: relative;
     height: 0;
-    padding-top: 40.3%;
+    // padding-top: 40.3%;
+    padding-top: 29.3%;
     min-height: 580px;
 
     &::before {
@@ -468,15 +470,17 @@ body {
 }
 
 .main-screen__title {
+    padding-left: 30px;
     font-family: "Roboto Condensed";
-    font-size: 66px;
+    font-size: 76px;
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
     letter-spacing: 1.32px;
     text-transform: uppercase;
-    margin-bottom: 79px;
-    margin-top: 135px;
+    margin-top: 88px;
+    // margin-bottom: 79px;
+    margin-bottom: auto;
 
     span {
         padding: 10px 20px;
@@ -508,8 +512,8 @@ body {
         }
 
         img {
-            width: 70px;
-            height: 70px;
+            width: 107px;
+            height: 107px;
             object-position: contain;
             object-position: center;
             filter: grayscale(1);
@@ -533,7 +537,7 @@ body {
 
 .arrow-title {
     color: #3E434A;
-    font-size: 32px;
+    font-size: 42px;
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
@@ -564,16 +568,26 @@ body {
 
 .combined-section__wrapper {
     display: flex;
+    align-items: stretch;
     gap: 40px;
 }
 
 .graphs-block {
-    min-width: calc(58.58% - 20px);
+    min-width: calc(50% - 20px);
     flex-shrink: 0;
 }
 
 .news-list {
     border: 1px solid #ECEEF0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-block {
+    display: flex;
+    flex-direction: column;
 }
 
 .news-item {
@@ -581,7 +595,7 @@ body {
     align-items: flex-start;
     justify-content: space-between;
     gap: 10px;
-    height: 76px;
+    // height: 76px;
     padding: 16px 20px;
     position: relative;
 
@@ -622,7 +636,7 @@ body {
 
 .news-item__name {
     color: #3E434A;
-    font-size: 14px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
@@ -651,13 +665,13 @@ body {
 }
 
 #container-pie {
-    height: 230px;
-    width: 230px;
+    height: 250px;
+    width: 250px;
 }
 
 #container-bar {
-    height: 220px;
-    width: 220px;
+    height: 250px;
+    width: 250px;
     margin-top: -20px;
     border-bottom: 1px solid #ECEEF0;
 }
@@ -693,6 +707,9 @@ body {
     }
 }
 
+.data-blocks {
+    width: 100%;
+}
 
 .data-block {
     padding: 35px 40px;
@@ -724,7 +741,7 @@ body {
 
 .data-block__descr {
     color: #3E434A;
-    font-size: 14px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
@@ -748,7 +765,8 @@ body {
     background-size: cover;
     background-position: left center;
     display: block;
-    min-height: 400px;
+    // min-height: 400px;
+    min-height: 505px;
 }
 
 .map-descr {
@@ -853,7 +871,7 @@ body {
     }
 
     .title-name {
-        font-size: 22px;
+        font-size: 28px;
     }
 
     .arrow-title-ico {
@@ -877,11 +895,12 @@ body {
 
     h4 {
         color: #FFF;
-        font-size: 21px;
+        font-size: 28px;
         font-style: normal;
         font-weight: 600;
         line-height: 120%;
         margin-bottom: 15px;
+        text-transform: uppercase;
     }
 
     ul {
@@ -924,7 +943,7 @@ body {
         li {
             font-weight: 400;
             width: 100%;
-            font-size: 12px;
+            font-size: 14px;
             align-items: center;
 
             &::before {
@@ -949,7 +968,8 @@ body {
 }
 
 .application-slide__right {
-    width: 446px;
+    // width: 446px;
+    width: 580px;
     background: #3E434A;
     padding: 40px;
     display: flex;
@@ -973,7 +993,7 @@ body {
 .application-slide__title {
     color: #3E434A;
     font-family: "Roboto Condensed";
-    font-size: 56px;
+    font-size: 76px;
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
@@ -1121,7 +1141,7 @@ body {
 .toggle-item__name {
     max-width: 400px;
     color: #3E434A;
-    font-size: 32px;
+    font-size: 42px;
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
@@ -1183,7 +1203,7 @@ body {
 
 .toggle-item__inner {
     color: #3E434A;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
@@ -1266,7 +1286,7 @@ body {
     align-items: center;
     gap: 10px;
     color: #F04D44;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
@@ -1308,7 +1328,7 @@ body {
     background: #ECEEF0;
     padding: 60px;
     color: #3E434A;
-    font-size: 22px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
@@ -1330,7 +1350,7 @@ body {
 .quote-block__descr {
     margin-top: 20px;
     color: #A3A9B2;
-    font-size: 14px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
@@ -1345,11 +1365,12 @@ body {
 
 .quotation__title {
     color: #3E434A;
-    font-size: 28px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
     margin-bottom: 14px;
+    text-transform: uppercase;
 }
 
 .quotation-content {
@@ -1362,7 +1383,7 @@ body {
     display: flex;
     align-items: center;
     color: #3E434A;
-    font-size: 20px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
@@ -1373,7 +1394,7 @@ body {
     margin-right: 20px;
     color: #3E434A;
     font-family: "Roboto Condensed";
-    font-size: 24px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
@@ -1382,7 +1403,7 @@ body {
 
 .quotation-index {
     text-align: right;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
@@ -1421,7 +1442,8 @@ body {
 
 .quotation-news {
     flex-shrink: 0;
-    width: 420px;
+    // width: 420px;
+    width: 570px;
     background-color: #3E434A;
     padding: 20px;
     display: block;
@@ -1457,7 +1479,7 @@ body {
 
 .quotation-news__image {
     position: relative;
-    height: 200px;
+    height: 240px;
     width: 100%;
     margin-bottom: 10px;
 
@@ -1471,6 +1493,8 @@ body {
 
 .quotation-news__name {
     margin-bottom: 10px;
+    font-size: 28px;
+    text-transform: uppercase;
 }
 
 .quotation-news__more {
@@ -1485,7 +1509,7 @@ body {
 
 .media-slide__image {
     position: relative;
-    height: 200px;
+    height: 240px;
 
     img {
         width: 100%;
@@ -1510,12 +1534,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 335px;
+    width: 455px;
     color: #3E434A;
     font-size: 21px;
     font-style: normal;
     font-weight: 600;
     line-height: 120%;
+    height: auto;
 
     &:not(:last-child) {
         border-right: none;
@@ -1532,14 +1557,17 @@ body {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    font-size: 24px;
 }
 
 .media-slide__date {
     color: #A3A9B2;
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
+    margin-top: auto;
+    padding-top: 10px;
 }
 
 
@@ -1555,7 +1583,7 @@ body {
 .mailing-section__wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
     color: #FFF;
     font-size: 28px;
     font-style: normal;
@@ -1566,8 +1594,10 @@ body {
 .mailing-section__form {
     display: flex;
     flex-direction: column;
-    max-width: 390px;
+    // max-width: 390px;
+    max-width: 460px;
     width: 100%;
+    margin-left: 40px;
 }
 
 .agree-label {
@@ -1642,6 +1672,7 @@ body {
     font-size: 18px;
     font-weight: 600;
     line-height: 140%;
+    margin-left: auto;
 }
 
 
@@ -1691,7 +1722,7 @@ body {
 .footer__nemu-item {
     display: block;
     color: #FFF;
-    font-size: 14px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 140%;
@@ -1703,16 +1734,13 @@ body {
 
 .footer__blue-link {
     display: block;
-    color: #3A7EE3;
-    font-size: 14px;
+    // color: #3A7EE3;
+    color: #fff;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-skip-ink: none;
-    text-decoration-thickness: auto;
-    text-underline-offset: auto;
+
 
     &:not(:last-child) {
         margin-bottom: 10px;
@@ -1727,7 +1755,7 @@ body {
     display: block;
     text-align: right;
     color: #FFF;
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
@@ -1735,4 +1763,10 @@ body {
     &:not(:last-child) {
         margin-bottom: 10px;
     }
+}
+
+.mailing-section__title {
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 120%;
 }
