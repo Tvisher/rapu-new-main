@@ -886,11 +886,17 @@
             exporting: {
                 enabled: false
             },
+            // chart: {
+            //     type: 'column',
+            //     height: '100%',
+            //     spacing: [0, 0, 0, 0],
+            //     margin: [0, 0, 0, 0]
+            // },
             chart: {
                 type: 'column',
                 height: '100%',
-                spacing: [0, 0, 0, 0],
-                margin: [0, 0, 0, 0]
+                spacing: [10, 0, 0, 0], // верхний отступ
+                margin: [10, 0, 0, 0]
             },
             title: { text: '' },
             xAxis: {
@@ -901,13 +907,31 @@
             },
             legend: { enabled: false },
             // tooltip: { enabled: false },
+            // plotOptions: {
+            //     column: {
+            //         borderRadius: 8, // скругление столбцов
+            //         pointPadding: 0.01, // меньше отступ
+            //         dataLabels: {
+            //             enabled: true,
+            //             format: '{point.y:.2f}',
+            //             style: {
+            //                 fontSize: '14px',
+            //                 fontWeight: '600',
+            //                 color: '#000'
+            //             }
+            //         }
+            //     }
+            // },
             plotOptions: {
                 column: {
-                    borderRadius: 8, // скругление столбцов
-                    pointPadding: 0.01, // меньше отступ
+                    borderRadius: 8,
+                    pointPadding: 0.01,
                     dataLabels: {
                         enabled: true,
                         format: '{point.y:.2f}',
+                        crop: false,
+                        overflow: 'none',
+                        y: 0, // сдвиг вверх
                         style: {
                             fontSize: '14px',
                             fontWeight: '600',
@@ -916,6 +940,7 @@
                     }
                 }
             },
+
             series: [{
                 name: 'Процент',
                 colors: columnsColors,
