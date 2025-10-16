@@ -840,7 +840,6 @@
         const pieColors = ['#FFA148', '#3A7EE3', '#69D354'];
         const columnsColors = ['#3A7EE3', '#69D354', '#FFA148'];
 
-        // Donut chart
         Highcharts.chart('container-pie', {
             exporting: {
                 enabled: false
@@ -881,17 +880,10 @@
 
         });
 
-        // Bar chart
         Highcharts.chart('container-bar', {
             exporting: {
                 enabled: false
             },
-            // chart: {
-            //     type: 'column',
-            //     height: '100%',
-            //     spacing: [0, 0, 0, 0],
-            //     margin: [0, 0, 0, 0]
-            // },
             chart: {
                 type: 'column',
                 height: '100%',
@@ -906,22 +898,7 @@
                 visible: false
             },
             legend: { enabled: false },
-            // tooltip: { enabled: false },
-            // plotOptions: {
-            //     column: {
-            //         borderRadius: 8, // скругление столбцов
-            //         pointPadding: 0.01, // меньше отступ
-            //         dataLabels: {
-            //             enabled: true,
-            //             format: '{point.y:.2f}',
-            //             style: {
-            //                 fontSize: '14px',
-            //                 fontWeight: '600',
-            //                 color: '#000'
-            //             }
-            //         }
-            //     }
-            // },
+
             plotOptions: {
                 column: {
                     borderRadius: 8,
@@ -931,7 +908,7 @@
                         format: '{point.y:.2f}',
                         crop: false,
                         overflow: 'none',
-                        y: 0, // сдвиг вверх
+                        y: 0,
                         style: {
                             fontSize: '14px',
                             fontWeight: '600',
@@ -945,7 +922,6 @@
                 name: 'Процент',
                 colors: columnsColors,
                 colorByPoint: true,
-                // data: [4.60, 1.51, 3.97]
                 tooltip: {
                     pointFormat: ''
                 },
