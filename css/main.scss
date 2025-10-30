@@ -1803,7 +1803,10 @@ body {
     line-height: 120%;
 }
 
-.search-modal {
+
+
+.modal-template {
+    overflow: auto;
     visibility: hidden;
     opacity: 0;
     z-index: 999;
@@ -1814,7 +1817,7 @@ body {
     height: 100%;
     background-color: rgba(62, 67, 74, 0.8);
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
     padding: 20px;
     transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
@@ -1875,4 +1878,72 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M27 5L5 27' stroke='%23F04D44' stroke-width='3' stroke-linecap='round'/%3e%3cpath d='M5 5L27 27' stroke='%23F04D44' stroke-width='3' stroke-linecap='round'/%3e%3c/svg%3e ");
+}
+
+.hot-line-modal {
+    padding: 20px;
+}
+
+.hot-line__form {
+    height: fit-content;
+    padding: 40px;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 725px;
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.hot-line__field {
+    padding: 18px 28px;
+    border: 1px solid #A3A9B2;
+    width: 100%;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+
+    &::placeholder {
+        color: #A3A9B2;
+
+    }
+}
+
+.hot-line__name {
+    color: #3E434A;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 6px;
+}
+
+.hot-line__title {
+    color: #3E434A;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.hot-line__close {
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    position: absolute;
+    width: 76px;
+    height: 76px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M27 5L5 27' stroke='%23F04D44' stroke-width='3' stroke-linecap='round'/%3e%3cpath d='M5 5L27 27' stroke='%23F04D44' stroke-width='3' stroke-linecap='round'/%3e%3c/svg%3e ");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 32px;
+}
+
+textarea.hot-line__field {
+    resize: vertical;
+    min-height: 140px;
 }

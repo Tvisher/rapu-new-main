@@ -834,7 +834,7 @@
     </footer>
 
     <!-- Новый контент -->
-    <div class="search-modal">
+    <div class="search-modal modal-template">
         <div class="search-modal__content">
             <form class="search-modal__form">
                 <input type="text" class="search-input" placeholder="Введите слова для поиска">
@@ -843,6 +843,34 @@
             </form>
         </div>
     </div>
+
+    <div class="modal-template hot-line-modal show">
+        <div class="hot-line__form">
+            <div class="hot-line__close"></div>
+            <div class="hot-line__title">Горячая линия</div>
+            <label class="hot-line__label">
+                <div class="hot-line__name">Имя</div>
+                <input class="hot-line__field" type="text" placeholder="Имя"></input>
+            </label>
+
+            <label class="hot-line__label">
+                <div class="hot-line__name">Email</div>
+                <input class="hot-line__field" name="email" type="text" placeholder="Email"></input>
+            </label>
+
+            <label class="hot-line__label">
+                <div class="hot-line__name">Телефон</div>
+                <input class="hot-line__field" name="phone" type="text" placeholder="Телефон"></input>
+            </label>
+
+            <label class="hot-line__label">
+                <div class="hot-line__name">Сообщение</div>
+                <textarea class="hot-line__field" placeholder="Текст"></textarea>
+            </label>
+        </div>
+    </div>
+
+
     <script src="./js/jquery.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/highcharts.js"></script>
