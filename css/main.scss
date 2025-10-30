@@ -1956,3 +1956,44 @@ textarea.hot-line__field {
     padding: 10px 24px;
     color: #FFF;
 }
+
+.hot-line__message {
+    background-color: #EF4D44;
+    margin: auto;
+    padding: 40px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 690px;
+    width: 100%;
+    color: #FFF;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-transform: uppercase;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='322' height='282' viewBox='0 0 322 282' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg opacity='0.1'%3e%3cpath d='M0.000978947 322L0.000993022 161.001L161 161.001L0.000978947 322Z' fill='white'/%3e%3cpath d='M2.38419e-06 160.998L1.64592e-05 -0.00126291L160.999 -0.00124884L2.38419e-06 160.998Z' fill='white'/%3e%3cpath d='M160.996 160.998L160.996 -0.00126291L321.995 -0.00124884L160.996 160.998Z' fill='white'/%3e%3c/g%3e%3c/svg%3e ");
+    background-repeat: no-repeat;
+    background-position: left top;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.hot-line__message-ico {
+    width: 80px;
+    height: 80px;
+}
+
+.hot-line__message-close {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 76px;
+    height: 70px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M27 5L5 27' stroke='white' stroke-width='3' stroke-linecap='round'/%3e%3cpath d='M5 5L27 27' stroke='white' stroke-width='3' stroke-linecap='round'/%3e%3c/svg%3e ");
+    background-repeat: no-repeat;
+    background-size: 32px;
+    background-position: center;
+}
