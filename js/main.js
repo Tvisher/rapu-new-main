@@ -85,6 +85,7 @@ $(".toggle-item__head").on("click", function () {
 
 
 const searchModal = document.querySelector('.search-modal');
+const hotLineModal = document.querySelector('.hot-line-modal');
 
 document.addEventListener('click', (e) => {
     const target = e.target;
@@ -94,5 +95,16 @@ document.addEventListener('click', (e) => {
 
     if (target.closest('.search-modal__close') || (target.closest('.search-modal') && !target.closest('.search-modal__content'))) {
         searchModal && searchModal.classList.remove('show');
+    }
+
+
+    if (target.closest('.mailing-section__hot-line')) {
+        e.preventDefault()
+        hotLineModal && hotLineModal.classList.add('show');
+    }
+
+
+    if (target.closest('.hot-line__close') || (target.closest('.hot-line-modal') && !target.closest('.hot-line__form'))) {
+        hotLineModal && hotLineModal.classList.remove('show');
     }
 })
