@@ -82,3 +82,17 @@ $(".toggle-item__head").on("click", function () {
 
 
 });
+
+
+const searchModal = document.querySelector('.search-modal');
+
+document.addEventListener('click', (e) => {
+    const target = e.target;
+    if (target.closest('.header-search')) {
+        searchModal && searchModal.classList.add('show');
+    }
+
+    if (target.closest('.search-modal__close') || (target.closest('.search-modal') && !target.closest('.search-modal__content'))) {
+        searchModal && searchModal.classList.remove('show');
+    }
+})

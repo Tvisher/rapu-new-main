@@ -1802,3 +1802,77 @@ body {
     font-size: 36px;
     line-height: 120%;
 }
+
+.search-modal {
+    visibility: hidden;
+    opacity: 0;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(62, 67, 74, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+
+    &.show {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.search-modal__content {
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+    background-color: #FFF;
+}
+
+.search-input {
+    padding: 18px 28px;
+    border: 1px solid #A3A9B2;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    max-width: 685px;
+    width: 100%;
+    display: block;
+
+    &::placeholder {
+        color: #A3A9B2;
+    }
+}
+
+.search-modal__form {
+    display: flex;
+    gap: 10px;
+}
+
+.search-btn {
+    cursor: pointer;
+    width: 76px;
+    height: 70px;
+    background-color: #F04D44;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M2.63746 13.1286C3.04837 14.0954 3.6457 14.9719 4.39534 15.708C5.14498 16.444 6.03226 17.0252 7.00651 17.4183C7.98076 17.8114 9.0229 18.0088 10.0734 17.9992C11.124 17.9895 12.1623 17.7731 13.1292 17.3622C14.0961 16.9513 14.9725 16.3539 15.7086 15.6043C16.4446 14.8547 17.0258 13.9674 17.4189 12.9931C17.812 12.0189 18.0094 10.9767 17.9998 9.92621C17.9902 8.87568 17.7737 7.83734 17.3628 6.87046C16.9519 5.90358 16.3545 5.0271 15.6049 4.29107C14.8553 3.55504 13.968 2.97387 12.9937 2.58074C12.0195 2.18761 10.9773 1.99022 9.92682 1.99985C8.87628 2.00947 7.83794 2.22592 6.87105 2.63684C5.90417 3.04775 5.0277 3.64508 4.29167 4.39473C3.55564 5.14437 2.97447 6.03164 2.58134 7.00589C2.18821 7.98014 1.99083 9.02228 2.00046 10.0728C2.01009 11.1233 2.22654 12.1617 2.63746 13.1286Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M16.0001 15.9995L22.0001 21.9995' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e ");
+    background-size: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+.search-modal__close {
+    cursor: pointer;
+    width: 76px;
+    height: 70px;
+    background-color: #ECEEF0;
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M27 5L5 27' stroke='%23F04D44' stroke-width='3' stroke-linecap='round'/%3e%3cpath d='M5 5L27 27' stroke='%23F04D44' stroke-width='3' stroke-linecap='round'/%3e%3c/svg%3e ");
+}
