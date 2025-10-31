@@ -107,6 +107,10 @@ document.addEventListener('click', (e) => {
     if (target.closest('.result-message-close') || (target.closest('.result-modal') && !target.closest('.result-message'))) {
         target.closest('.show').classList.remove('show');
     }
+
+    if (target.closest('.hot-line__close') || (target.closest('.hot-line-modal') && !target.closest('.hot-line__form'))) {
+        target.closest('.show').classList.remove('show');
+    }
 })
 
 const isEmail = (value) => {
