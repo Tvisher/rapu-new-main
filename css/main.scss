@@ -1654,6 +1654,10 @@ body {
         line-height: 100%;
         padding: 12px 15px;
         width: 100%;
+
+        &.err {
+            color: red;
+        }
     }
 
     button {
@@ -1691,6 +1695,7 @@ body {
             background-size: 12px;
             background-position: center;
         }
+
     }
 }
 
@@ -1833,6 +1838,8 @@ body {
     width: 100%;
     padding: 20px;
     background-color: #FFF;
+    height: fit-content;
+    margin: auto;
 }
 
 .search-input {
@@ -1908,7 +1915,10 @@ body {
 
     &::placeholder {
         color: #A3A9B2;
+    }
 
+    &.error {
+        border-color: red
     }
 }
 
@@ -1957,7 +1967,7 @@ textarea.hot-line__field {
     color: #FFF;
 }
 
-.hot-line__message {
+.result-message {
     background-color: #EF4D44;
     margin: auto;
     padding: 40px;
@@ -1976,16 +1986,14 @@ textarea.hot-line__field {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='322' height='282' viewBox='0 0 322 282' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg opacity='0.1'%3e%3cpath d='M0.000978947 322L0.000993022 161.001L161 161.001L0.000978947 322Z' fill='white'/%3e%3cpath d='M2.38419e-06 160.998L1.64592e-05 -0.00126291L160.999 -0.00124884L2.38419e-06 160.998Z' fill='white'/%3e%3cpath d='M160.996 160.998L160.996 -0.00126291L321.995 -0.00124884L160.996 160.998Z' fill='white'/%3e%3c/g%3e%3c/svg%3e ");
     background-repeat: no-repeat;
     background-position: left top;
-    opacity: 0;
-    visibility: hidden;
 }
 
-.hot-line__message-ico {
+.result-message-ico {
     width: 80px;
     height: 80px;
 }
 
-.hot-line__message-close {
+.result-message-close {
     cursor: pointer;
     position: absolute;
     right: 0;
@@ -1996,4 +2004,14 @@ textarea.hot-line__field {
     background-repeat: no-repeat;
     background-size: 32px;
     background-position: center;
+}
+
+.error-text {
+    color: red;
+    margin: 5px 0;
+    display: none;
+}
+
+.hot-line__field.error+.error-text {
+    display: block;
 }
