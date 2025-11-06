@@ -12,14 +12,29 @@ const mainScreenBgSlider = new Swiper('.main-screen-bg-slider', {
     },
 });
 
+const breakpoint = 576;
+let partnersSlider;
+function enableSwiper() {
+    partnersSlider = new Swiper('.partners-slider', {
+        slidesPerView: 'auto',
+        speed: 1200,
+        spaceBetween: 0,
+        centerInsufficientSlides: 1
+    });
+}
 
+function checkPartnersSlider() {
+    const windowWidth = window.innerWidth;
+    if (windowWidth >= breakpoint && !partnersSlider) {
+        enableSwiper();
+    } else if (windowWidth < breakpoint && partnersSlider) {
+        partnersSlider.destroy(true, true);
+        partnersSlider = null;
+    }
+}
 
-const partnersSlider = new Swiper('.partners-slider', {
-    slidesPerView: 'auto',
-    speed: 1200,
-    spaceBetween: 0,
-    centerInsufficientSlides: 1
-});
+window.addEventListener('load', checkPartnersSlider);
+window.addEventListener('resize', checkPartnersSlider);
 
 
 
@@ -86,6 +101,7 @@ $(".toggle-item__head").on("click", function () {
 
 const searchModal = document.querySelector('.search-modal');
 const hotLineModal = document.querySelector('.hot-line-modal');
+const mobMenu = document.querySelector('.header-mob__menu');
 
 document.addEventListener('click', (e) => {
     const target = e.target;
@@ -111,6 +127,12 @@ document.addEventListener('click', (e) => {
     if (target.closest('.hot-line__close') || (target.closest('.hot-line-modal') && !target.closest('.hot-line__form'))) {
         target.closest('.show').classList.remove('show');
     }
+
+    if (target.closest('.header-menu-btn')) {
+        target.closest('.header-menu-btn').classList.toggle('open')
+        mobMenu && mobMenu.classList.toggle('show')
+    }
+
 })
 
 const isEmail = (value) => {
