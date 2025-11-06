@@ -50,6 +50,10 @@ const applicationSlider = new Swiper('.application-slider', {
         nextEl: '.application .swiper-button-next',
         prevEl: '.application .swiper-button-prev',
     },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+    },
 });
 
 
@@ -60,6 +64,10 @@ const mediaSectionSlider = new Swiper('.media-section__slider', {
     navigation: {
         nextEl: '.media-section .swiper-button-next',
         prevEl: '.media-section .swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
     },
 });
 

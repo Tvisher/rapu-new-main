@@ -2061,6 +2061,34 @@ textarea.hot-line__field {
     display: block;
 }
 
+.swiper-pagination {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin: 10px 0;
+    display: none;
+    height: fit-content !important;
+
+    .swiper-pagination-bullet {
+        transition: all .3s ease-in-out;
+        width: 5px;
+        height: 5px;
+        background-color: transparent;
+        border: 1px solid #000;
+        opacity: 1 !important;
+        margin: 0 !important;
+
+
+        &.swiper-pagination-bullet-active {
+            transform: scale(1.4);
+            border-color: $brand-color;
+            background-color: $brand-color;
+        }
+    }
+}
+
 
 @media (max-width: 1860px) {
     .map-image {
@@ -2358,6 +2386,10 @@ textarea.hot-line__field {
 @media (max-width: 576px) {
     .main-screen {
         margin-top: 61px;
+    }
+
+    .swiper-pagination {
+        display: flex;
     }
 
     .header-mob {
