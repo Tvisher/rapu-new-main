@@ -38,11 +38,15 @@ window.addEventListener('resize', checkPartnersSlider);
 
 
 
+
 const applicationSlider = new Swiper('.application-slider', {
     slidesPerView: 1,
     speed: 1200,
     spaceBetween: 20,
     effect: 'fade',
+    autoplay: {
+        delay: 3000,
+    },
     fadeEffect: {
         crossFade: true
     },

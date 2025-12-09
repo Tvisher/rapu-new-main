@@ -940,6 +940,7 @@ body {
 .application-slide {
     display: flex;
     align-items: stretch;
+    height: auto;
 
     h4 {
         color: #FFF;
@@ -1426,7 +1427,7 @@ body {
 
 .quotation-in-dev__text {
     color: #FFF;
-    font-size: 76px;
+    font-size: 42px;
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
@@ -1434,7 +1435,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     width: 100%;
-    background: #3E434A;
+    background: rgba(62, 67, 74, 0.65);
     padding: 10px;
 }
 
@@ -2223,7 +2224,7 @@ textarea.hot-line__field {
     }
 
     .quotation-in-dev__text {
-        font-size: 56px;
+        font-size: 36px;
     }
 
     .quotation__wrapper {
